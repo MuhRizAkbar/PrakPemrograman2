@@ -19,7 +19,6 @@ public class PenjualanDaoImpl implements PenjualanDAO {
     public ObservableList<Penjualan> findAll() {
         ObservableList<Penjualan> list = FXCollections.observableArrayList();
         
-        // QUERY JOIN: Mengambil data dari tabel penjualan, digabung dengan tabel pelanggan dan buku
         String sql = "SELECT p.*, pel.nama AS nama_pelanggan, b.judul AS judul_buku " +
                      "FROM penjualan p " +
                      "JOIN pelanggan pel ON p.pelanggan_id = pel.pelanggan_id " +
@@ -74,4 +73,5 @@ public class PenjualanDaoImpl implements PenjualanDAO {
             e.printStackTrace();
         }
     }
+
 }
