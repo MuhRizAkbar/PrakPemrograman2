@@ -10,9 +10,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            // PERBAIKAN:
-            // 1. Nama file harus 'DashboardLayout.FXML' (bukan Dashboard.fxml)
-            // 2. Path harus '/view/' karena package kamu namanya 'view', bukan 'Praktikum7.view'
             Parent root = FXMLLoader.load(getClass().getResource("/view/DashboardLayout.FXML"));
             
             Scene scene = new Scene(root);
@@ -28,4 +25,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }
