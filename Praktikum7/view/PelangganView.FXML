@@ -12,7 +12,6 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PelangganController">
    <children>
-      <!-- VBox Utama: Mengatur Form di Atas dan Tabel di Bawah secara otomatis -->
       <VBox spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
             <!-- BAGIAN FORM -->
@@ -39,9 +38,6 @@
                   </HBox>
                </children>
             </VBox>
-
-            <!-- BAGIAN TABEL -->
-            <!-- VBox.vgrow="ALWAYS" artinya tabel akan memanjang memenuhi sisa layar -->
             <TableView fx:id="tblPelanggan" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="colNama" prefWidth="200.0" text="Nama" />
@@ -55,4 +51,5 @@
          </children>
       </VBox>
    </children>
+
 </AnchorPane>
