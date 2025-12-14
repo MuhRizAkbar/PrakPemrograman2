@@ -14,7 +14,6 @@
    <children>
       <VBox spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
-            <!-- BAGIAN FORM -->
             <VBox spacing="10.0">
                <children>
                   <Label text="Nama" />
@@ -53,3 +52,4 @@
    </children>
 
 </AnchorPane>
+
