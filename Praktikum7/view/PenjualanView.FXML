@@ -16,10 +16,8 @@
    <children>
       <VBox spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
-            <!-- BAGIAN INPUT DATA -->
             <VBox spacing="10.0">
                <children>
-                  <!-- Baris 1: Pilihan -->
                   <HBox spacing="20.0">
                      <children>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
@@ -37,7 +35,6 @@
                      </children>
                   </HBox>
 
-                  <!-- Baris 2: Angka & Tanggal -->
                   <HBox spacing="20.0">
                      <children>
                         <VBox spacing="5.0">
@@ -61,7 +58,6 @@
                      </children>
                   </HBox>
 
-                  <!-- Baris 3: Tombol -->
                   <HBox spacing="10.0">
                      <children>
                         <Button onAction="#onAdd" prefWidth="150.0" text="Simpan Transaksi" />
@@ -74,7 +70,6 @@
                </children>
             </VBox>
 
-            <!-- BAGIAN TABEL -->
             <TableView fx:id="tblPenjualan" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="colPelanggan" prefWidth="150.0" text="Pelanggan" />
@@ -90,4 +85,5 @@
          </children>
       </VBox>
    </children>
+
 </AnchorPane>
