@@ -14,7 +14,6 @@
    <children>
       <VBox spacing="15.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
-            <!-- BAGIAN FORM -->
             <VBox spacing="10.0">
                <children>
                   <Label text="Judul Buku" />
@@ -53,7 +52,6 @@
                </children>
             </VBox>
 
-            <!-- BAGIAN TABEL -->
             <TableView fx:id="tblBuku" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="colJudul" prefWidth="250.0" text="Judul" />
@@ -70,3 +68,4 @@
    </children>
 
 </AnchorPane>
+
