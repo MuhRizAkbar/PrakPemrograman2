@@ -2,7 +2,6 @@ package controller;
 
 import Service.PelangganService;
 
-// Import JavaFX
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -35,7 +34,6 @@ public class PelangganController {
         
         loadData();
 
-        // Listener untuk mengisi form saat tabel diklik
         tblPelanggan.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (newVal != null) {
                 selectedId = newVal.getPelangganId();
@@ -111,3 +109,4 @@ public class PelangganController {
         alert.show();
     }
 }
+
