@@ -2,7 +2,6 @@ package controller;
 
 import Service.BukuService;
 
-// Import JavaFX
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
@@ -122,4 +121,5 @@ public class BukuController {
         alert.setContentText(msg);
         alert.show();
     }
+
 }
