@@ -74,7 +74,7 @@ public class BukuDaoImpl implements BukuDAO {
         }
     }
 
-    // === INI BAGIAN PENTING YANG SEBELUMNYA HILANG ===
+
     @Override
     public Buku findById(int id) {
         String sql = "SELECT * FROM buku WHERE buku_id=?";
@@ -96,4 +96,5 @@ public class BukuDaoImpl implements BukuDAO {
         }
         return null;
     }
+
 }
