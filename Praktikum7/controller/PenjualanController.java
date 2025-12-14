@@ -1,11 +1,8 @@
 package controller;
 
-// Import 3 Service
 import Service.BukuService;
 import Service.PelangganService;
 import Service.PenjualanService;
-
-// Import JavaFX dan util
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
@@ -36,7 +33,6 @@ public class PenjualanController {
     @FXML private TableColumn<Penjualan, Double> colTotal;
     @FXML private TableColumn<Penjualan, String> colTanggal;
     
-    // Memanggil 3 service sekaligus
     private final PenjualanService service = new PenjualanService();
     private final PelangganService pelangganService = new PelangganService();
     private final BukuService bukuService = new BukuService();
@@ -52,7 +48,6 @@ public class PenjualanController {
         loadData();
         refreshCombo();
         
-        // Logika otomatis menghitung total harga saat jumlah diketik
         txtJumlah.textProperty().addListener((obs, oldVal, newVal) -> {
             if (!newVal.isEmpty() && cbBuku.getValue() != null) {
                 try {
@@ -98,12 +93,10 @@ public class PenjualanController {
                 cbPelanggan.getValue().getPelangganId(), 
                 cbBuku.getValue().getBukuId()
             );
-
-            // Service akan mengecek stok dan menguranginya
             service.addData(p); 
             
             loadData();
-            refreshCombo(); // Refresh agar stok buku di combo terupdate (opsional)
+            refreshCombo(); 
             clearForm();
             showAlert("Sukses", "Transaksi berhasil disimpan!");
             
@@ -144,4 +137,5 @@ public class PenjualanController {
         alert.setContentText(msg);
         alert.show();
     }
+
 }
