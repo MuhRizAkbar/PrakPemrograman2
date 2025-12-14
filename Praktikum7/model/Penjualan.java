@@ -9,12 +9,9 @@ public class Penjualan {
     private Date tanggal;
     private int pelangganId;
     private int bukuId;
-    
-    // TAMBAHAN: Variabel untuk menampung data nama (bukan cuma ID)
     private String namaPelanggan;
     private String judulBuku;
 
-    // Constructor 1: Untuk Input Data (Saat tombol Add ditekan)
     public Penjualan(int penjualanId, int jumlah, double totalHarga, Date tanggal, int pelangganId, int bukuId) {
         this.penjualanId = penjualanId;
         this.jumlah = jumlah;
@@ -24,8 +21,6 @@ public class Penjualan {
         this.bukuId = bukuId;
     }
 
-    // Constructor 2: Untuk Tampilan Tabel (Saat Load Data dari Database)
-    // Constructor ini menerima namaPelanggan dan judulBuku
     public Penjualan(int penjualanId, int jumlah, double totalHarga, Date tanggal, int pelangganId, int bukuId, String namaPelanggan, String judulBuku) {
         this(penjualanId, jumlah, totalHarga, tanggal, pelangganId, bukuId); // Panggil constructor 1
         this.namaPelanggan = namaPelanggan;
@@ -79,5 +74,6 @@ public class Penjualan {
 	public void setJudulBuku(String judulBuku) {
 		this.judulBuku = judulBuku;
 	}
+
 
 }
