@@ -23,7 +23,6 @@
                   <Label text="Penulis" />
                   <TextField fx:id="txtPenulis" promptText="Nama Penulis" />
                   
-                  <!-- Harga dan Stok dibuat sejajar agar hemat tempat -->
                   <HBox spacing="20.0">
                      <children>
                         <VBox HBox.hgrow="ALWAYS">
@@ -69,4 +68,5 @@
          </children>
       </VBox>
    </children>
+
 </AnchorPane>
